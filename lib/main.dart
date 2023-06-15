@@ -118,6 +118,109 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 )
               ]
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 12, left: 10, right: 10),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                direction: Axis.horizontal,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  TextButton(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                              "1 min",
+                              style: TextStyle(
+                                  color: Color(0xFFffffff),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500
+                              )
+                          )
+                      ),
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF121212)),
+                          fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
+                          shape: MaterialStateProperty.resolveWith(
+                                  (states) => RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              )
+                          )
+                      ),
+                      onPressed: () => debugPrint("Clicked!")
+                  ),
+                  TextButton(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                              "5 min",
+                              style: TextStyle(
+                                  color: Color(0xFFffffff),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500
+                              )
+                          )
+                      ),
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF121212)),
+                          fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
+                          shape: MaterialStateProperty.resolveWith(
+                                  (states) => RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              )
+                          )
+                      ),
+                      onPressed: () => debugPrint("Clicked!")
+                  ),
+                  TextButton(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                              "15 min",
+                              style: TextStyle(
+                                  color: Color(0xFFffffff),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500
+                              )
+                          )
+                      ),
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF121212)),
+                          fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
+                          shape: MaterialStateProperty.resolveWith(
+                                  (states) => RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              )
+                          )
+                      ),
+                      onPressed: () => debugPrint("Clicked!")
+                  ),
+                  TextButton(
+                      child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                              "1 hour",
+                              style: TextStyle(
+                                  color: Color(0xFFffffff),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500
+                              )
+                          )
+                      ),
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF121212)),
+                          fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
+                          shape: MaterialStateProperty.resolveWith(
+                                  (states) => RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              )
+                          )
+                      ),
+                      onPressed: () => debugPrint("Clicked!")
+                  )
+                ],
+              )
             )
           ],
         )
