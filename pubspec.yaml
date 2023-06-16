@@ -22,7 +22,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  assets:
+    - assets/images/Chart.png
+
   fonts:
     - family: SourceCodePro
       fonts:
-        - asset: fonts/SourceCodePro-Medium.ttf
+        - asset: assets/fonts/SourceCodePro-Medium.ttf

@@ -221,6 +221,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ],
               )
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15, left: 10, right: 10),
+              child: Row(
+                children: [
+                  Image.asset(
+                      "assets/images/Chart.png",
+                      width: MediaQuery.of(context).size.width - 20,
+                      height: 350
+                  )
+                ]
+              )
             )
           ],
         )
