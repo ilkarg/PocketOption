@@ -239,11 +239,14 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 12, left: 10, right: 10),
-                child: Row(
+                child: Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  direction: Axis.horizontal,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
                     TextButton(
                       child: Align(
-                        alignment: Alignment.center,
                         child: Text(
                           "Down",
                           style: TextStyle(
@@ -251,18 +254,18 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 14,
                             fontWeight: FontWeight.w500
                           )
-                        )
+                        ),
                       ),
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFCF5656)),
                         fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
                         shape: MaterialStateProperty.resolveWith(
-                          (states) => RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(24),
-                          )
+                                (states) => RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(24)
+                                )
                         )
                       ),
-                      onPressed: () => debugPrint("Down!")
+                      onPressed: () => debugPrint("Down"),
                     ),
                     TextButton(
                       child: Align(
@@ -280,12 +283,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF58CF56)),
                         fixedSize: MaterialStateProperty.all<Size>(Size(72.5, 32)),
                         shape: MaterialStateProperty.resolveWith(
-                          (states) => RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(24),
-                          )
+                                (states) => RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(24)
+                                )
                         )
                       ),
-                      onPressed: () => debugPrint("Up!")
+                      onPressed: () => debugPrint("Up"),
                     )
                   ]
                 )
